@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Accueil</title>
+
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html"><img id="logo" src="images/logo-belvedere.png" alt="Logo Centre hospitalier du Belvedère" /></a>
+
+            <nav id="menu_desktop">
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="parcoursdesoins.html">Parcours de soins</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Articles</a>
+                    </li>
+                    <li>
+                        <a href="informations.html">Infos</a>
+                    </li>
+
+                    <a class="button button__rdv" href="">Prendre rendez-vous</a>
+                </ul>
+            </nav>
+
+            <nav id="menu_burger">
+                <div id="menuToggle">
+
+                    <input type="checkbox" />
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                      <a href="index.html"><li>Accueil</li></a>
+                      <a href="parcoursdesoins.html"><li>Parcours de soins</li></a>
+                      <a href="articles.html"><li>Articles</li></a>
+                      <a href="informations.html"><li>Infos</li></a>
+                      <a class="button button__rdv" href="">Prendre rendez-vous</a>
+                    </ul>
+              </div>
+            </nav>
+        </header>
+
+        <section id="banniere_index">
+            <h1>Toute l’équipe du centre hospitalier <br>Vous souhaite la Bienvenue </h1>
+        </section>
+
+        <section id="parcours">
+            <a class="button button__patient" href="">Patients</a>
+
+            <a class="button button__accompagnateurs" href="">Accompagnateurs</a>
+
+            <a class="button button__professionnels" href="">Professionnels de santé</a>
+        </section>
+
+        <section id="contact">
+            <div id="contact_infos">
+                <div id="contact_infos_contact">
+                    <div id="contact_infos_contacts">
+                        <h2 id="contact_infos_contacts_titre_1">Nous trouver</h2>
+
+                        <p>72 Rue Louis Pasteur <br> 76130 Mont-Saint-Aignan</p>
+                    </div>
+
+                    <div id="contact_infos_contacts">
+                        <h2 id="contact_infos_contacts_titre_2" >Nous appeler</h2>
+
+                        <p>02 35 15 64 64</p>
+                    </div>
+                </div>
+
+                <div id="contact_infos_formulaire">
+                    <h2 id="contact_infos_contacts_titre_3">Nous écrire</h2>
+
+                    <form method="post">
+                        <div id="formulaire_part1">
+                            <input type="text" placeholder="Prénom" required />
+                        
+                            <input type="text" placeholder="Nom" required />
+                        </div>
+                        <div>
+                            <input type="text" id="form_message" placeholder="Votre message" required />
+                        </div>
+
+                        <input type="submit" value="Envoyer" id="button_submit" onclick="generate()" />
+                    </form>  
+                </div>
+            </div>
+
+            <div id="contact_maps">
+                <img src="images/google-map.png">
+            </div>
+        </section>
+
+        <section id="articles">
+            <h2>Derniers articles</h2>
+
+            <article id="articles_maternité">
+                <img src="images/article-maternite.png">
+
+                <div id="articles_texte">
+                    <h3>L’échographie : à quelles étapes de la grossese ?</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet odio dignissim, faucibus justo sit amet, laoreet urna. Fusce neque metus, mattis sit amet faucibus facilisis, tincidunt quis nisi. In vel leo sit amet arcu venenatis ultricies non ac urna. Duis dapibus suscipit mi, non fermentum quam ullamcorper ac.</p>
+
+                    <a id="bouton_maternité">En savoir plus</a>
+                </div>
+            </article>
+
+            <article id="articles_gynecologie">
+                <img src="images/article-gynecologie.png">
+
+                <div id="articles_texte">
+                    <h3>L’échographie : à quelles étapes de la grossese ?</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet odio dignissim, faucibus justo sit amet, laoreet urna. Fusce neque metus, mattis sit amet faucibus facilisis, tincidunt quis nisi. In vel leo sit amet arcu venenatis ultricies non ac urna. Duis dapibus suscipit mi, non fermentum quam ullamcorper ac.</p>
+
+                    <a id="bouton_gynecologie">En savoir plus</a>
+                </div>
+            </article>
+
+            <article id="articles_chirurgie">
+                <img src="images/article-chirurgie.png">
+
+                <div id="articles_texte">
+                    <h3>Qu’est ce que la reprise de cicatrice de césarienne?</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet odio dignissim, faucibus justo sit amet, laoreet urna. Fusce neque metus, mattis sit amet faucibus facilisis, tincidunt quis nisi. In vel leo sit amet arcu venenatis ultricies non ac urna. Duis dapibus suscipit mi, non fermentum quam ullamcorper ac.</p>
+
+                    <a id="bouton_chirurgie">En savoir plus</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="labels">
+            <h2>Nos labels qualités</h2>
+
+            <div id="section_label">
+                <img src="images/logo-label-maternys.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet odio dignissim, faucibus justo sit amet, laoreet urna. Fusce neque metus, mattis sit amet faucibus facilisis, tincidunt quis nisi. In vel leo sit amet arcu venenatis ultricies non ac urna. Duis dapibus suscipit mi, non fermentum quam ullamcorper ac.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet odio dignissim, faucibus justo sit amet, laoreet urna. Fusce neque metus, mattis sit amet faucibus facilisis, tincidunt quis nisi. In vel leo sit amet arcu venenatis ultricies non ac urna. Duis dapibus suscipit mi, non fermentum quam ullamcorper ac.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet odio dignissim, faucibus justo sit amet, laoreet urna. Fusce neque metus, mattis sit amet faucibus facilisis, tincidunt quis nisi. In vel leo sit amet arcu venenatis ultricies non ac urna.
+            Duis dapibus suscipit mi, non fermentum quam ullamcorper ac.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet odio dignissim, faucibus justo sit amet, laoreet urna. Fusce neque metus, mattis sit amet faucibus facilisis, tincidunt quis nisi. In vel leo sit amet arcu venenatis ultricies non ac urna. </p>
+        </section>
+
+        <footer>
+            <div id="footer">
+                <div class="footer_section">
+                    <img id="footer_section_logo_ordinateur" src="images/logo-belvedere.png">
+                </div>
+
+
+                <div class="footer_section">
+                    <h4>Utilisateur</h4>
+
+                    <p>Mon compte <br>
+                    Mot de passe perdu <br>
+                    Politique de confidentialité <br>
+                    Espace Patient - F.A.Q</p>
+
+                    <h4>Carrière</h4>
+
+                    <p>Rejoignez nos équipes</p>
+                </div>
+
+
+                <div class="footer_section">
+                    <h4>Centre hospitalier</h4>
+
+                    <p>Qui sommes-nous? <br>
+                    Conditions générales <br>
+                    Mentions légales <br>
+                    Contactez-nous</p>
+                </div>
+
+
+                <div class="footer_section">
+                    <h4>Nos guides</h4>
+
+                    <p>Guide patient <br>
+                    Guide accompagnateur <br>
+                    Guide professionnel de santé <br>
+                    Nos labels qualité <br>
+                    Blog </p>
+                </div>
+
+                <div class="footer_section">
+                    <h4>Informations</h4>
+
+                    <p>Tous nos conseils sur notre Blog <br>Je demande des renseignements à notre standard <br>
+                    Appel depuis l’étranger : +33 (0)2 35 15 64 64</p>
+                </div>
+
+                <div class="footer_section">
+                    <img id="footer_section_logo_mobile" src="images/logo-belvedere.png">
+                </div>
+            </div>
+
+            <div id="footer_réseaux">
+                <p>Nous suivre</p>
+                    <a href="index.html"><img src="images/icone-facebook.png"></a>
+
+                    <a href="index.html"><img src="images/icone-twitter.png"></a>
+
+                    <a href="index.html"><img src="images/icone-youtube.png"></a>
+            </div>
+        </footer>
+    </body>
+</html>
